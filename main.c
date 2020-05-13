@@ -66,25 +66,25 @@ void filetime2(){
 //두 개의 파일 크기를 비교하는 함수 작성
 void sizecmp(){
 
-	int size1 = (int)stat1.st_size;
-	int size2 = (int)stat2.st_size;
+	int s1 = (int)stat1.st_size;
+	int s2 = (int)stat2.st_size;
 
 	printf("size compare\n");
 
-	if(size1 > size2)	printf("text1 is bigger\n");
-	else if (size1 < size2)	printf("text2 is bigger\n");
+	if(s1 > s2)	printf("text1 is bigger\n");
+	else if (s1 < s2)	printf("text2 is bigger\n");
 	else 			printf("same size\n");
 		
 }
 
 //두 개의 파일 블락 수를 비교하는 함수 작성
 void blockcmp(){
-    int blk1 = (int)stat1.st_blocks;
-    int blk2 = (int)stat2.st_blocks;
+    int block1 = (int)stat1.st_blocks;
+    int block2 = (int)stat2.st_blocks;
     printf("block compare\n");
 
-    if(blk1 > blk2)	printf("text1 is bigger\n");
-    else if(blk1<blk2)	printf("text2 is bigger\n");
+    if(block1 > block2)	printf("text1 is bigger\n");
+    else if(block1<block2)	printf("text2 is bigger\n");
     else		printf("same number of block \n");
 }
 
@@ -156,4 +156,3 @@ void timecmp(){
            }
     }   
 }
-
