@@ -60,6 +60,7 @@ void filetime2(){
 	printf("date : %d\n", time_2->tm_mday);
 	printf("hour : %d\n", time_2->tm_hour);
 	printf("min : %d\n", time_2->tm_min);
+
 }
 
 //두 개의 파일 크기를 비교하는 함수 작성
