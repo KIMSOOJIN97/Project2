@@ -29,24 +29,37 @@ int main(){
 
 //파일 1의 정보를 가져오는 함수 작성
 void filestat1(){
-	return;
-
-
+	stat("text1",&stat1);
 }
 
 //파일 2의 정보를 가져오는 함수 작성
 void filestat2(){
-    
+	stat("text2",&stat2);
 }
 
 //파일 1의 시간 정보를 가져오는 함수 작성
 void filetime1(){
-    
+	printf("text1\n");
+	time_1=localtime(&stat1.st_mtime);
+	printf("size : %d\n", (int)stat1.st_size);
+	printf("blocks : %d\n", (int)stat1.st_blocks);
+	printf("month : %d\n", time_1->tm_mon+1);
+	printf("date : %d\n", time_1->tm_mday);	
+	printf("hour : %d\n", time_1->tm_hour);
+	printf("min : %d\n", time_1->tm_min);
 }
+
 
 //파일 2의 시간 정보를 가져오는 함수 작성
 void filetime2(){
-    
+	printf("text2\n");
+	time_2 = localtime(&stat2.st_mtime);
+    	printf("size : %d\n", (int)stat2.st_size);
+	printf("blocks : %d\n", (int)stat2.st_blocks);
+	printf("month : %d\n", time_2->tm_mon+1);
+	printf("date : %d\n", time_2->tm_mday);
+	printf("hour : %d\n", time_2->tm_hour);
+	printf("min : %d\n", time_2->tm_min);
 }
 
 //두 개의 파일 크기를 비교하는 함수 작성
