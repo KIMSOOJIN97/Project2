@@ -130,15 +130,13 @@ void timecmp(){
     int sec1, sec2;
 
     time1 =localtime(&stat1.st_mtime);
-    time2 =localtime(&stat2.st_mtime);
-    
-    hour1 = time1->tm_hour;
-    hour2 = time2->tm_hour;
-
-    min1 = time1->tm_min;
-    min2 = time2->tm_min;
-
     sec1= time1->tm_sec;
+    hour1 = time1->tm_hour;
+	min1 = time1->tm_min;
+
+    time2 =localtime(&stat2.st_mtime);
+	hour2 = time2->tm_hour;
+    min2 = time2->tm_min;
     sec2= time2->tm_sec;
 
     printf( "time compare\n");
