@@ -49,7 +49,7 @@ void filetime2(){
 
 //두 개의 파일 크기를 비교하는 함수 작성
 void sizecmp(){
-	return ;    
+    
 }
 
 //두 개의 파일 블락 수를 비교하는 함수 작성
