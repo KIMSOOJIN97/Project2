@@ -112,11 +112,11 @@ void datecmp(){
     else if(year1 > year2)	printf("text2 is early\n");
 
     else{
-	   if(mon1 > mon2)	printf("text1 is early\n");
-	   else if(mon1 < mon2)      printf("text2 is early\n");
+	   if(mon1 < mon2)	printf("text1 is early\n");
+	   else if(mon1 > mon2)      printf("text2 is early\n");
 	   else{
-		   if(day1 > day2)           printf("text1 is early\n");
-		   else if(day1 < day2)      printf("text2 is early\n");
+		   if(day1 < day2)           printf("text1 is early\n");
+		   else if(day1 > day2)      printf("text2 is early\n");
 		   else		printf("same date\n");
 	   }
     }
@@ -147,11 +147,11 @@ void timecmp(){
     else if(hour1 > hour2)      printf("text2 is early\n");
 
     else{
-           if(min1 > min2)      printf("text1 is early\n");
-           else if(min1 < min2)      printf("text2 is early\n");
+           if(min1 < min2)      printf("text1 is early\n");
+           else if(min1 > min2)      printf("text2 is early\n");
            else{
-                   if(sec1 > sec2)           printf("text1 is early\n");
-                   else if(sec1 < sec2)      printf("text2 is early\n");
+                   if(sec1 < sec2)           printf("text1 is early\n");
+                   else if(sec1 > sec2)      printf("text2 is early\n");
                    else         printf("same time\n");
            }
     }   
