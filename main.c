@@ -31,6 +31,7 @@ int main(){
 void filestat1(){
 	return;
 
+
 }
 
 //파일 2의 정보를 가져오는 함수 작성
