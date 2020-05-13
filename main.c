@@ -106,7 +106,7 @@ void datecmp(){
     day1= time1->tm_mday;
     day2= time2->tm_mday;
 
-    printF("date compare");
+    printf("date compare");
 
     if(year1 < year2)		printf("text1 is early\n");
     else if(year1 > year2)	printf("text2 is early\n");
